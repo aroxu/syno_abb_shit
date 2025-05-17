@@ -39,7 +39,12 @@ def run_backup(task_ids):
 def main():
     # Example task ID - you can modify this or accept input parameters
     task_ids = [45]
-    run_backup(task_ids)
+    try:
+        run_backup(task_ids)
+        print("Backup task started successfully.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        exit(1)
 
 
 if __name__ == "__main__":
