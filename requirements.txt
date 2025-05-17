@@ -1,1 +1,2 @@
 synology_api
+python-dotenv
